@@ -86,7 +86,9 @@ Evaluation strategy: every N steps (`evals_per_epoch` per epoch), intermediate *
 
 Metrics below were produced after fine-tuning (3 epochs) with the notebook evaluation cells. Pre-training and final accuracy tables use the configured intermediate eval subset and full-split evaluation respectively. The classification report and confusion matrix are computed on the **test set** (7,600 examples).
 
-First table — Pre-training baseline (random 4-class head, before fine-tuning; not LM zero-shot):
+### Pre-training baseline
+
+Random 4-class head, before fine-tuning; not LM zero-shot.
 
 | Split      | Accuracy |
 |------------|----------|
@@ -94,7 +96,9 @@ First table — Pre-training baseline (random 4-class head, before fine-tuning; 
 | Validation | 26.88%   |
 | Test       | 28.75%   |
 
-Second table — Fine-tuned model (after training):
+### Fine-tuned model
+
+After training.
 
 | Split      | Accuracy |
 |------------|----------|
@@ -102,7 +106,7 @@ Second table — Fine-tuned model (after training):
 | Validation | 93.72%   |
 | Test       | 93.37%   |
 
-Classification report — fine-tuned model (test set):
+### Classification report — fine-tuned model (test set)
 
 | Class    | Precision | Recall | F1-Score | Support |
 |----------|-----------|--------|----------|---------|
@@ -114,7 +118,7 @@ Classification report — fine-tuned model (test set):
 
 Macro avg: precision 0.93, recall 0.93, F1 0.93. Weighted avg: precision 0.93, recall 0.93, F1 0.93.
 
-Confusion matrix — fine-tuned model (rows are true labels, columns are predicted):
+### Confusion matrix — fine-tuned model (rows are true labels, columns are predicted)
 
 |          | World | Sports | Business | Sci/Tech |
 |----------|-------|--------|----------|----------|
