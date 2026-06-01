@@ -1,0 +1,4 @@
+# TensorFlow is only required to load OpenAI's original GPT-2 checkpoints.
+# Install alongside the base requirements when downloading or loading weights:
+#   pip install -r requirements.txt -r requirements-tf.txt
+tensorflow>=2.12.0

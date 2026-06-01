@@ -1,0 +1,49 @@
+# Generated data files (AG News CSV splits: data/news_train.csv, etc.)
+data/
+
+# Downloaded pretrained GPT-2 weights (large binary files, ~500MB)
+gpt2/
+
+# Saved model checkpoints
+models/
+*.pth
+*.pt
+*.ckpt
+
+# Generated plots
+plots/
+*.pdf
+
+# Python cache
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
