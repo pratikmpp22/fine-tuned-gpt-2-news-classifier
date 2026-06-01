@@ -1,17 +1,18 @@
 # Generated data files (AG News CSV splits: data/news_train.csv, etc.)
-data/
+# Leading "/" limits the rule to the repository root (not src/data/).
+/data/
 
 # Downloaded pretrained GPT-2 weights (large binary files, ~500MB)
-gpt2/
+/gpt2/
 
-# Saved model checkpoints
-models/
+# Saved model checkpoints (not src/models/ Python package)
+/models/
 *.pth
 *.pt
 *.ckpt
 
 # Generated plots
-plots/
+/plots/
 *.pdf
 
 # Python cache

@@ -1,5 +1,3 @@
-# ARCHITECTURE.md
-
 ## 1. Overview
 The end-to-end pipeline begins with loading the raw AG News dataset, followed by tokenisation using GPT-2's BPE tokenizer. A custom PyTorch dataset construction feeds into dataloaders that dynamically batch and pad sequences. The model architecture is a from-scratch PyTorch implementation of GPT-2 (124M), into which pretrained weights are loaded from an original OpenAI TensorFlow checkpoint. During training, transfer learning is achieved by fine-tuning only the classification head and the final transformer blocks while freezing the rest. Evaluation tracks loss and accuracy, leading to a robust inference pipeline that classifies new articles.
 

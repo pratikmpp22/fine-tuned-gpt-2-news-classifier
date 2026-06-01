@@ -132,7 +132,7 @@ To reproduce these numbers, run the evaluation cells at the end of `notebooks/fi
 Installation:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/pratikmpp22/fine-tuned-gpt-2-news-classifier.git
 cd fine-tuned-gpt-2-news-classifier
 pip install -r requirements.txt
 pip install -r requirements-tf.txt   # only needed to download/load GPT-2 checkpoints
